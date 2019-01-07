@@ -1,42 +1,39 @@
-/*body {
-  background-color: blue;
+body {
+  color: #2b2b2b;
 }
-*/
 
+.top-margin-40px {
+  margin-top: 40px;
+}
 
 .app-header {
   color: white;
   position: fixed;
   width: 100%;
-  background-color: #3b4648;
-  height: 80px;
-  top: 0px;
-  z-index: 1000;
-}
-
-.app-header-small {
-  color: white;
-  position: fixed;
-  width: 100%;
-  background-color: #3b4648;
+  background-color: #2b2b2b;
   height: 50px;
+  line-height: 33px;
   top: 0px;
   z-index: 1000;
 }
 
-.content {
-  margin-top: 120px;
-}
-
-.navigation {
-  float: right;
+.app-header a {
+  color: white;
 }
 
 .nav-link {
-    list-style-type: none;
+  display: inline-block;
+  padding-right: 75px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+@include media-breakpoint-up(md) {
+  .app-header {
     display: block;
-    margin-right: 50px;
-    float: left;
+  }
 }
 
 .jumbotron {
@@ -44,25 +41,41 @@
   height: 50em;
   background-attachment: fixed;
   background-position: center;
-  /*background-repeat: no-repeat;*/
   background-size: cover;
-  color: white
 }
 
 .full-name {
   margin-top: 100px;
   font-size: 60px;
+  color: white;
 }
 
 .jumbo-titles {
   padding: 15px;
+  color: white;
 }
 
 .jumbo-icons {
-  /*height: 50px;
-  width: 50px;*/
   color: white;
   padding: 15px;
+}
+
+.jumbotron a {
+  text-decoration: none;
+}
+
+.chevron-down {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: #2a2a2a;
+  cursor: pointer;
+}
+
+
+/*Start of Bio Section below Jumbotron*/
+.content {
+  margin-top: 120px;
 }
 
 .headshot {
@@ -71,19 +84,48 @@
   border-radius: 25%;
 }
 
-.under-headshot-bullets {
-  text-decoration: none;
-  list-style-type: none;
-}
-
 .headshot-icons {
   padding-right: 20px;
   padding-bottom: 10px;
 }
 
+.headshot-icons:hover {
+  color: #555555;
+}
+
+.under-headshot-icons {
+  margin-top: 35px;
+}
+
+.under-headshot-icons a {
+  color: #2b2b2b;
+}
+
+
+/*Tech icons*/
+.tech-icons-row {
+  margin-left: 3px;
+}
+
 .devicon-icons {
   font-size: 5em;
   padding: 5px;
+}
+
+
+/*Project Section*/
+.projects-section {
+  margin: 0px 40px 0px 40px;
+}
+
+.project-links {
+  font-size: 20px;
+  color: #2b2b2b;
+  font-style: italic;
+}
+
+.project-links:hover {
+  color: #555555;
 }
 
 .project-image {
@@ -92,14 +134,27 @@
 }
 
 .project-github-icons {
-  color: black;
+  color: #2b2b2b;
 }
 
 
+/*Footer below Projects*/
 .footer {
   height: 50px;
-  background: #6cf;
-  position: absolute;
   bottom: 0;
   width: 100%;
+  margin-top: 90px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer-icons {
+  padding: 15px;
+  color: #2b2b2b
+}
+
+.footer-icons:hover {
+  color: #555555;
 }

@@ -18,14 +18,6 @@ $(document).ready(function() {
       $(".app-header").hide();
     }
 
-  // $(window).scroll(function() {
-  //   if ($(window).scrollTop() > 100) {
-  //     $(".app-header").fadeIn(300);
-  //   } else if ($(window).scrollTop() < 100) {
-  //     $(".app-header").fadeOut(300);
-  //   }
-  // });
-
   $(".about-link").click(function() {
     let offset = 100;
       $([document.documentElement, document.body]).animate({
